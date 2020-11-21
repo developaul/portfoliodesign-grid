@@ -69,3 +69,37 @@ p {
     }
 }
 
+
+// Servicios
+.servicios {
+    text-align: center;
+    margin-top: 3rem;
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax( 200px, 1fr ) );
+        grid-column-gap: 2rem;
+    }
+}
+
+.servicio {
+
+    h2 {
+        padding-bottom: .5rem;
+
+        &::after {
+            content: '';
+            display: block;
+            height: .5rem;
+            width: 7rem;
+            background-color: $primario;
+            margin: 1rem auto 0 auto;
+        } 
+    }
+
+    i {
+        font-size: 3rem;
+        color: $secundario;
+    }
+}
+
