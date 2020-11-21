@@ -103,3 +103,30 @@ p {
     }
 }
 
+// Portfolio
+.listado {
+    .elemento {
+        border-bottom: 1px solid $oscuro;
+        margin-bottom: 3rem;
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: repeat( 3, 1fr );
+        grid-auto-rows: max-content;
+        grid-gap: 2rem;
+
+        .elemento {
+            border-bottom: none;
+            
+            &:nth-child( 3 ) {
+                grid-row-end: span 2;
+            }
+        }
+    }
+}
+

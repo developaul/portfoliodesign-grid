@@ -97,3 +97,27 @@ p {
   font-size: 3rem;
   color: #44b3c2;
 }
+
+.listado .elemento {
+  border-bottom: 1px solid #5b5b5b;
+  margin-bottom: 3rem;
+}
+
+.listado .elemento:last-of-type {
+  border-bottom: none;
+}
+
+@media screen and (min-width: 768px) {
+  .listado {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: max-content;
+    grid-gap: 2rem;
+  }
+  .listado .elemento {
+    border-bottom: none;
+  }
+  .listado .elemento:nth-child(3) {
+    grid-row-end: span 2;
+  }
+}
