@@ -39,3 +39,30 @@ p {
   font-size: 1.2rem;
   line-height: 2rem;
 }
+
+.hero {
+  height: 100vh;
+  background-image: url("../img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.hero .contenedor {
+  height: 100vh;
+  display: grid;
+  align-content: center;
+}
+
+.hero .contenido {
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero .contenido .titulo {
+  margin: 0;
+}
+
+.hero .contenido .subtitulo {
+  font-size: 1.6rem;
+}
