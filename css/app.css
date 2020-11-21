@@ -66,3 +66,34 @@ p {
 .hero .contenido .subtitulo {
   font-size: 1.6rem;
 }
+
+.servicios {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-column-gap: 2rem;
+  }
+}
+
+.servicio h2 {
+  padding-bottom: .5rem;
+}
+
+.servicio h2::after {
+  content: '';
+  display: block;
+  height: .5rem;
+  width: 7rem;
+  background-color: #f1a94e;
+  margin: 1rem auto 0 auto;
+}
+
+.servicio i {
+  font-size: 3rem;
+  color: #44b3c2;
+}
